@@ -66,7 +66,7 @@ export function HighstreetHunt() {
               <img className="w-auto h-24px" src={logoHighstreet} alt="Highstreet logo" loading="lazy" />
             </E4cCollaborator>
             <section className="flex flex-col">
-              <EventTitle className="font-bold text-72px leading-88px text-white uppercase">
+              <EventTitle className="font-bold text-56px xl:text-72px leading-72px xl:leading-88px text-white uppercase">
                 {EventHighstreetHunt.title}
               </EventTitle>
               <EventSubtitle className="font-bold text-36px leading-44px text-white uppercase">
