@@ -1,0 +1,27 @@
+kind: pipeline
+type: exec
+name: ambrus events frontend
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+  - name: build release
+    when:
+      branch:
+        - main
+    commands:
+      - cd /mnt/events
+      - git pull
+      - yarn install --frozen-lockfile
+      - yarn build
+  - name: build testing
+    when:
+      branch:
+        - testing
+    commands:
+      - cd /mnt/events-testing
+      - git pull
+      - yarn install --frozen-lockfile
+      - yarn build
