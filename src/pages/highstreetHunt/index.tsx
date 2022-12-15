@@ -58,8 +58,8 @@ function EventButton(props: React.PropsWithChildren<EventButtonProps>) {
 
 export function HighstreetHunt() {
   return (
-    <PageLayout>
-      <EventContainer className="pt-68px xl:pt-100px bg-top-center bg-cover min-h-1024px">
+    <PageLayout className="min-h-screen">
+      <EventContainer className="pt-68px xl:pt-100px bg-top-center bg-cover min-h-screen">
         <div className="p-36px lg:p-60px xl:p-120px">
           <div className="flex flex-col gap-24px max-w-568px">
             <E4cCollaborator className="mx-auto text-white">
